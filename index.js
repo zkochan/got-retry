@@ -33,6 +33,10 @@ function request (url, options, callback) {
     throw new Error('Parameter `url` must be a string or object, ' + typeof url);
   }
 
+  if (!options) {
+    options = {};
+  }
+
   var body = options.body;
 
   if (body) {
