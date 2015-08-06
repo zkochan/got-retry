@@ -37,7 +37,6 @@ function request (url, options, callback) {
     options = {};
   }
 
-  options.retries = options.retries || 2;
   var body = options.body;
 
   if (body) {
@@ -64,6 +63,9 @@ function asCallback (url, options, callback) {
     options = {};
   }
 
+  // apply default retry options
+  options = assign({}, defaultRetryOptions, options);
+
   var operation = retry.operation(options);
 
   operation.attempt(function () {
@@ -78,6 +80,9 @@ function asCallback (url, options, callback) {
 }
 
 function asPromise (url, options) {
+  // apply default retry options
+  options = assign({}, defaultRetryOptions, options);
+
   var operation = retry.operation(options);
 
   return new Promise(function (resolve, reject) {
@@ -94,6 +99,15 @@ function asPromise (url, options) {
     });
   });
 }
+
+
+/**
+ * Default retry options
+ */
+
+var defaultRetryOptions = {
+  retries: 2
+};
 
 
 /**
