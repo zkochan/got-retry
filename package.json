@@ -1,0 +1,41 @@
+{
+  "name": "got-retry",
+  "version": "1.0.2",
+  "description": "Retry got request on network error",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdemedes/got-retry.git"
+  },
+  "keywords": [
+    "got",
+    "retry",
+    "request"
+  ],
+  "author": "Vadim Demedes <vdemedes@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vdemedes/got-retry/issues"
+  },
+  "homepage": "https://github.com/vdemedes/got-retry#readme",
+  "devDependencies": {
+    "got": "^4.1.1",
+    "into-stream": "^2.0.0",
+    "make-lint": "^1.0.1",
+    "pem": "^1.7.2",
+    "tap": "^1.3.2"
+  },
+  "dependencies": {
+    "is-plain-obj": "^1.0.0",
+    "is-stream": "^1.0.1",
+    "object-assign": "^3.0.0",
+    "pinkie-promise": "^1.0.0",
+    "retry": "^0.6.1"
+  },
+  "files": [
+    "index.js"
+  ]
+}
