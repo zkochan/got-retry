@@ -50,6 +50,13 @@ got('https://www.roqet.io')
 
 All options (like `retries`, `randomize`...) from [`retry`](http://npmjs.com/retry) supported.
 
+#### retries
+Type: `Number`  
+Default: `2`
+
+Number of retries.
+
+
 ### Tests
 
 [![Circle CI](https://circleci.com/gh/vdemedes/got-retry.svg?style=svg)](https://circleci.com/gh/vdemedes/got-retry)

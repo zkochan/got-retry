@@ -37,6 +37,7 @@ function request (url, options, callback) {
     options = {};
   }
 
+  options.retries = options.retries || 2;
   var body = options.body;
 
   if (body) {
