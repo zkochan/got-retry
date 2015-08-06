@@ -24,7 +24,7 @@
   "devDependencies": {
     "got": "^4.1.1",
     "into-stream": "^2.0.0",
-    "make-lint": "vdemedes/make-lint",
+    "make-lint": "^1.0.1",
     "pem": "^1.7.2",
     "tap": "^1.3.2"
   },
