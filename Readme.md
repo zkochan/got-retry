@@ -1,4 +1,4 @@
-# got-retry
+# got-retry [![Circle CI](https://circleci.com/gh/vdemedes/got-retry.svg?style=svg)](https://circleci.com/gh/vdemedes/got-retry)
 
 Retry [got](https://npmjs.org/package/got) request on network error (EAI_AGAIN, ENOTFOUND, ETIMEDOUT, etc).
 
@@ -47,7 +47,9 @@ got('https://www.roqet.io')
 
 ### Tests
 
-Included tests are unmodified, full test suite from `got` package.
+[![Circle CI](https://circleci.com/gh/vdemedes/got-retry.svg?style=svg)](https://circleci.com/gh/vdemedes/got-retry)
+
+Included tests are unmodified tests from `got` package.
 
 ```
 $ make test
