@@ -14,6 +14,8 @@ Retry [got](https://npmjs.org/package/got) request on network error (EAI_AGAIN, 
 
 ### Installation
 
+**Note**: `got` has to be installed separately. This package does not include `got` as a dependency.
+
 ```
 $ npm install got --save
 $ npm install got-retry --save
