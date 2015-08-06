@@ -8,16 +8,12 @@ Retry [got](https://npmjs.org/package/got) request on network error (EAI_AGAIN, 
 - 100% identical API
 - Original **got** test suite passes
 - Avoid issues caused by random network issues
-- Does not have a **got** dependency set, install it yourself
 - Retry functionality is based on the battle-tested `retry` package
 
 
 ### Installation
 
-**Note**: `got` has to be installed separately. This package does not include `got` as a dependency.
-
 ```
-$ npm install got --save
 $ npm install got-retry --save
 ```
 
