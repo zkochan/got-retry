@@ -4,10 +4,9 @@
  * Dependencies
  */
 
-var isPlainObject = require('got/node_modules/is-plain-obj');
-var isStream = require('got/node_modules/is-stream');
-var Promise = require('got/node_modules/pinkie-promise');
-var assign = Object.assign || require('got/node_modules/object-assign');
+var isPlainObject = require('is-plain-obj');
+var isStream = require('is-stream');
+var assign = Object.assign || require('object-assign');
 var retry = require('retry');
 var got = require('got');
 
