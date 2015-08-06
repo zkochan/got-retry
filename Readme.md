@@ -24,7 +24,7 @@ $ npm install got-retry --save
 
 Instead of:
 
-```javascript:
+```javascript
 const got = require('got');
 
 got('https://www.roqet.io')
