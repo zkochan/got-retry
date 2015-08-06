@@ -46,6 +46,9 @@ got('https://www.roqet.io')
   });
 ```
 
+### Options
+
+All options (like `retries`, `randomize`...) from [`retry`](http://npmjs.com/retry) supported.
 
 ### Tests
 

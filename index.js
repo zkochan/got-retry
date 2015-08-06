@@ -6,7 +6,7 @@
 
 var isPlainObject = require('is-plain-obj');
 var isStream = require('is-stream');
-var Promise = require('pinkie-promise'); 
+var Promise = require('pinkie-promise');
 var assign = require('object-assign');
 var retry = require('retry');
 var got = require('got');
@@ -63,9 +63,7 @@ function asCallback (url, options, callback) {
     options = {};
   }
 
-  var operation = retry.operation({
-    retries: 2
-  });
+  var operation = retry.operation(options);
 
   operation.attempt(function () {
     got(url, options, function (err) {
@@ -79,9 +77,7 @@ function asCallback (url, options, callback) {
 }
 
 function asPromise (url, options) {
-  var operation = retry.operation({
-    retries: 2
-  });
+  var operation = retry.operation(options);
 
   return new Promise(function (resolve, reject) {
     operation.attempt(function () {
