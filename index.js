@@ -5,6 +5,8 @@
  */
 
 var isPlainObject = require('is-plain-obj');
+var isFunction = require('util').isFunction;
+var isString = require('util').isString;
 var isStream = require('is-stream');
 var Promise = require('pinkie-promise');
 var assign = require('object-assign');
@@ -158,16 +160,8 @@ errors.forEach(function (error) {
 
 
 /**
- * Helpers & utilities
+ * Helpers
  */
-
-function isString (str) {
-  return typeof str === 'string';
-}
-
-function isFunction (fn) {
-  return typeof fn === 'function';
-}
 
 function isNetworkError (err) {
   return err instanceof got.RequestError;
