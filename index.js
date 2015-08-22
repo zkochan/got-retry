@@ -10,6 +10,7 @@ var isString = require('util').isString;
 var isStream = require('is-stream');
 var Promise = require('pinkie-promise');
 var assign = require('object-assign');
+var debug = require('debug')('got-retry');
 var retry = require('retry');
 var got = require('got');
 
@@ -73,6 +74,8 @@ function asCallback (url, options, callback) {
   operation.attempt(function () {
     got(url, options, function (err) {
       if (isNetworkError(err) && operation.retry(err)) {
+        debug('retry "%s"', url);
+
         return;
       }
 
@@ -93,6 +96,8 @@ function asPromise (url, options) {
         .then(resolve)
         .catch(function (err) {
           if (isNetworkError(err) && operation.retry(err)) {
+            debug('retry "%s"', url);
+
             return;
           }
 
