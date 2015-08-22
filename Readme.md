@@ -44,7 +44,7 @@ got('https://www.roqet.io')
 
 ### Options
 
-All options (like `retries`, `randomize`...) from [`retry`](http://npmjs.com/retry) supported.
+All options (like `retries`, `randomize`...) from [`retry`](http://npmjs.com/retry) are supported.
 
 #### retries
 Type: `Number`  
@@ -66,4 +66,4 @@ $ make test
 
 ### License
 
-got-retry is released under the MIT license.
+MIT © [Vadym Demedes](http://vadimdemedes.com)
