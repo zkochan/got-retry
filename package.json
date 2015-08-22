@@ -1,6 +1,6 @@
 {
   "name": "got-retry",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Retry got request on network error",
   "main": "index.js",
   "scripts": {
