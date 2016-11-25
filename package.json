@@ -22,18 +22,18 @@
   },
   "homepage": "https://github.com/vdemedes/got-retry#readme",
   "devDependencies": {
-    "into-stream": "^2.0.0",
+    "into-stream": "^3.0.0",
     "make-lint": "^1.0.1",
     "pem": "^1.7.2",
-    "tap": "^1.3.2"
+    "tap": "^8.0.1"
   },
   "dependencies": {
     "debug": "^2.2.0",
     "got": "^6.3.0",
     "is-plain-obj": "^1.0.0",
     "is-stream": "^1.0.1",
-    "object-assign": "^3.0.0",
-    "pinkie-promise": "^1.0.0",
+    "object-assign": "^4.1.0",
+    "pinkie-promise": "^2.0.1",
     "retry": "^0.10.0"
   },
   "files": [
